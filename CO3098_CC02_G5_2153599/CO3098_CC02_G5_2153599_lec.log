@@ -1,0 +1,88 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1446 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 1.04    seconds
+Elapse time  : 90      seconds
+Memory usage : 260.43  M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 1.36    seconds
+Elapse time  : 95      seconds
+Memory usage : 278.05  M bytes
+// Command: read_design ALU.v -verilog -golden
+// Parsing file ALU.v ...
+// Golden root module is set to 'ALU'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:2)
+// Warning: (RTL1.7) Non-blocking assignment is in combinational always block (occurrence:5)
+// Warning: (RTL6.1) X created due to the assignment of value X (occurrence:1)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.47    seconds
+Elapse time  : 105     seconds
+Memory usage : 282.09  M bytes
+// Command: read_design ALU_m.v -verilog -revised
+// Parsing file ALU_m.v ...
+// Revised root module is set to 'ALU'
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:1)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.58    seconds
+Elapse time  : 114     seconds
+Memory usage : 290.60  M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Warning: (F34) Converted 8 X assignment(s) as don't care(s)
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.79    seconds
+Elapse time  : 127     seconds
+Memory usage : 317.77  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO        Total   
+--------------------------------------------------------------------------------
+Golden            20     9         29      
+--------------------------------------------------------------------------------
+Revised           20     9         29      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO        Total   
+--------------------------------------------------------------------------------
+Golden            20     9         29      
+--------------------------------------------------------------------------------
+Revised           20     9         29      
+================================================================================
+0
+// Command: add_compared_points -all
+// 9 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO        Total   
+--------------------------------------------------------------------------------
+Equivalent           9         9       
+================================================================================
+0
